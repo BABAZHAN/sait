@@ -1,0 +1,14 @@
+.bmw{
+	display: flex;
+	flex-direction: row;
+}
+
+.bmw-image{
+	display: block;
+}
+
+.bmw-text{
+	display: block;
+	justify-content: space-between;
+	margin-left: 100px;
+}

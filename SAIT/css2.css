@@ -1,0 +1,49 @@
+.around{
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	font-size: 15px;
+	font-weight: 700;
+	text-decoration: none;
+	
+}
+
+.bg-1{
+	background-image: url(bg1.jpg);
+	margin-top: 15px;
+	width: 600px;
+	height: 350px;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+.bg-2{
+	background-image: url(bg2.jpg);
+	margin-top: 15px;
+	width: 600px;
+	height: 350px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bg-text{
+	margin-left: 40px;
+}
+
+.bg-button{
+	font-weight: 700;
+	font-size: 14px;
+	color: rgb(255, 255, 255);
+	border: 2px solid rgb(172, 170, 170);
+
+	font-weight: 700;
+	text-decoration: none;
+	transition: 0.3s;
+	margin-left: 40px;
+	padding: 14px 27px;
+}
+
+.bg-button:hover{
+	border-color: dimgrey;
+}

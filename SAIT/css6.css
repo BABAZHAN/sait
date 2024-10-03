@@ -1,0 +1,22 @@
+.contact{
+	background-color:rgb(220, 215, 215) ;
+	display: flex;
+	justify-content: space-between;
+}
+
+.test-button{
+	font-weight: 700;
+	font-size: 14px;
+	color: rgb(94, 94, 94);
+	font-weight: 700;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.test-button:hover{
+	color: rgb(0, 0, 0);
+}
+
+.test {
+	margin-right: 60px;
+}

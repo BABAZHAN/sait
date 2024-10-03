@@ -1,0 +1,48 @@
+
+.cards-holder{
+	display: flex;
+	justify-content: center;
+	margin-top: 100px;
+}
+
+.card{
+	width: 33%;
+	box-shadow: 10px 10px 40px 20px #0000001A;
+	margin-right: 20px;
+
+
+}
+
+ .card-image{
+	display: flex;
+	justify-content: center;
+ }
+
+ .card-title{
+	display: flex;
+	justify-content: center;
+    
+ }
+
+
+ .bmw{
+	margin-top: 100px;
+ }
+
+
+ 
+
+.card-around-button{
+
+	background-color:rgb(245, 246, 248);
+	padding: 14px 27px;
+	color: rgb(0, 0, 0);
+	font-size: 14px;
+	font-weight: 700;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.card-around-button:hover{
+	background-color: rgb(146, 147, 150);
+}
