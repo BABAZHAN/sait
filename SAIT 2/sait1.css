@@ -1,0 +1,421 @@
+body {
+    background-color: rgb(174, 172, 172);
+    font-size: 14px;
+    line-height: 1.75;
+}
+.navbar {
+    position: fixed;
+    background-color: #edf7fb;
+    width: 95%;
+    height: 40px;
+    box-shadow: 0 4px 10px black;
+    z-index: 401;
+    margin-left: 2%;
+    border-radius: 70px;
+}
+
+.navbar .conteiner {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    padding-left: 0;
+    margin-right: 370px;
+   
+}
+
+.navbar-menu li {
+    display: inline-block;
+}
+
+.navbar-menu li a {
+    display: inline-block;
+    color: rgb(245, 65, 65);
+    opacity: 0.6;
+    text-decoration: none;
+    padding: 10px;
+    transition: all .07s ease-in-out;
+}
+
+.navbar-menu li a:hover {
+    opacity: 1;
+}
+
+
+.navbar-wrap {
+
+    flex-flow: row nowrap;
+}
+
+.call {
+    margin-left: 30px;
+    padding: 10px 30px;
+    background-color: coral;
+    border-radius: 100px;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(255, 127, 80, .2);
+    transition: all .1s ease-in-out;
+}
+
+.call:hover {
+    transform: scale(1.04);
+    color: aliceblue;
+    box-shadow: 0 9px  9px rgba(255, 127, 80, .5);
+}
+
+.navbar-brend {
+    font-family: monospace;
+    margin-left: 50px;
+    font-weight: 700;
+    font-size: 26px;
+    text-decoration: none;
+    color: rgb(70, 70, 70);
+    transition: all .08s ease-in-out;
+}
+
+.navbar-brend:hover {
+    color: coral;
+}
+
+
+
+.header {
+    position: relative;
+    min-height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .6);
+}
+
+.header .row {
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+
+}
+
+.header-content {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.header-content h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.header-content h4 {
+    font-size: 21px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    opacity: 0.7;
+}
+
+
+
+
+.style-char {
+    background: #edf7fb url(bg4.jpg) repeat;
+    width: 595px;
+    height: 295px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid crimson;
+    border-spacing: 0;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    cursor: pointer;
+    margin-left: 280px;
+}
+
+.style-char .style-char1 {
+    background: crimson;
+    background-image: url(bg4.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 130%;
+    width: 16%;
+    height: 290px;
+    margin-bottom: -6px;
+    display: inline-block;
+    overflow: hidden;
+    transform: scale(1,1);
+}
+
+.style-char .style-char2 {
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 290px;
+    display: block;
+}
+
+.style-char .style-char2::after {
+    position: absolute;
+    background-image: url(bg5.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 150%;
+    color: black;
+    width: 100%;
+    height: 35.5px;
+    bottom: 30px;
+    text-align: center;
+    line-height: 1;
+    font-size: 75%;
+    font-weight: bold;
+    text-shadow: white 0px 0px 2px;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.1s ease 0s;
+}
+
+*, :after, :before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.style_char:hover .style_char2:hover::after {
+    opacity: 0.9;
+}
+
+.style-char:hover .style-char1, .style-char:hover .style-char2 {
+    opacity: .4;
+}
+
+.style-char .style-char1:first-child {
+    margin-left: 4px;
+    transform: scale(-1,1);
+}
+
+.style-char .style-char2 {
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 290px;
+    display: block;
+}
+
+.style-char:hover .style-char1:hover, .style-char:hover .style-char2:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+
+#style-char-block1 {
+    background-image: url(inoske.jpg);
+    background-position: -80px -20px;
+    background-size: 240%;
+}
+
+.style-char:hover #style-char-block1:hover::after {
+    content: "Иноске Хашибира";
+}
+
+#style-char-block2 {
+    background-image: url(zenitsu.jpg);
+    background-position: -110px -70px;
+    background-size: 290%;
+}
+
+.style-char:hover #style-char-block2:hover::after {
+    content: "Незуко Камадо";
+}
+
+
+#style-char-block3 {
+    background-image: url(nezuko.jpg);
+    background-position: -85px 20px;
+    background-size: 260%;
+}
+
+.style-char:hover #style-char-block3:hover::after {
+    content: "Незуко Камадо";
+}
+
+#style-char-block4 {
+    background-image: url(tanjiro.jpg);
+    background-position: -140px -110px;
+    background-size: 330%;
+}
+
+.style-char:hover #style-char-block4:hover::after {
+    content: "Танджиро Камадо";
+}
+
+#style-char-block5 {
+    background-image: url(giu.jpg);
+    background-position: -100px 10px;
+    background-size: 280%;
+}
+
+.style-char:hover #style-char-block5:hover::after {
+    content: "Гию Томиока";
+}
+
+#style-char-block6 {
+    background-image: url(muzan.jpg);
+    background-position: -50px 30px;
+    background-size: 170%;
+}
+
+.style-char:hover #style-char-block6:hover::after {
+    content: "Музан Кибуцуджи";
+}
+
+
+
+.style-mainpage2 {
+    position: relative;
+    background-image: url(menu_bg.jpg);
+    background-position: center center !important;
+    width: 80%;
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 1px solid #000;
+    box-shadow: 2px 4px 4px black, -2px 4px 4px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-left: 120px;
+
+}
+
+.style-mainpage2 span {
+    position: absolute;
+    width: 100%;
+    font-weight: bold;
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+    color: crimson;
+    z-index: 10;
+}
+
+
+
+#slider {
+    width: 750px;
+    height: 140px;
+    border: 5px solid black;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+#polosa {
+    background: pink;
+    width: 2500px;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+
+}
+
+#polosa img {
+    float: left;
+}
+
+#polosa::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+.sobi {
+    margin-top: 30px;
+}
+
+.img {
+    max-width: 125px;
+    max-height: 188px;
+}
+
+.sobi-1 {
+    margin-top: 30px;
+    display: flex;
+    margin-left: 160px;
+    border: 2px solid black;
+    margin-right: 160px;
+    background-color:white ;
+
+}
+
+.sobi-1 p {
+    margin-left: 50px;
+    font-size: 26px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.sobi-2 {
+    margin-top: 30px;
+    display: flex;
+    margin-left: 160px;
+    border: 2px solid black;
+    margin-right: 160px;
+    background-color: white;
+}
+
+.sobi-2 p {
+    margin-left: 50px;
+    font-size: 26px;
+    font-weight: 900;
+    text-align: center;
+}
+
+
+
+.history {
+    margin-top: 50px;
+}
+
+.history-text {
+    display: flex;
+    margin-left: 120px;
+    border: 2px solid black;
+    margin-right: 120px;
+    background-image: url(bg4.jpg);
+}
+
+.history-text p {
+   font-size: 20px;
+   font-weight: 700;
+   font-family: monospace;
+   margin-left: 30px;
+   margin-right: 30px;
+}
+
+.h-img-1 {
+    margin-left: 50px;
+    width: 145px;
+    height: 270px;
+    margin-top: 40px;
+}
+
+.h-img-2 {
+    margin-right: 50px;
+    width: 145px;
+    height: 270px;
+    margin-top: 40px;
+}
